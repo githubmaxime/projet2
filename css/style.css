@@ -13,9 +13,44 @@
     color: var(--main-color);
 }
 
+.logo {
+
+    position: relative; /* Permet de positionner l'image par rapport à son conteneur parent */
+    top: 20px; /* Déplacement vers le bas de 20 pixels */
+    width: 5%;
+    height: 25px; /* permet de maintenir le rapport hauteur/largeur de l'image */
+}
+
+.menu1 { 
+    
+    justify-content: flex-end;
+    position: absolute; 
+    top: 0;
+    right: 180px;
+    bottom: 100px;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.menu2 { 
+    
+    justify-content: flex-end;
+    position: absolute; 
+    top: 0;
+    right: 30px;
+    --main-color: #000000;
+}
+
+
 body {
     display: flex;
     justify-content: center;
+}
+
+.boxtop {
+    font-size: 12px;
+    position: relative;
+    top: 50px;
 }
 
 .main-container {
@@ -60,6 +95,8 @@ a {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    position: relative;
+    top: 200px;
     display: flex;
     justify-content: space-between;
 }
