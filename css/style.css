@@ -45,10 +45,6 @@ a {
     color: black
 }
 
-ul {
-    liste-style: none;
-}
-
 strong {
     font-weight: bold;
     font-style: normal;
@@ -252,7 +248,7 @@ header {
 }
 
 
-/* Résultat recherche d'hotel */
+/* Resultat recherche d'hotel */
 #hotels-liste {
     width: 66%;
     background-color: #F2F2F2;
@@ -375,25 +371,25 @@ span {
 }
 
 
-/* Résultat activités */
-#activités-recherche-resultat {
+/* Resultat activites */
+#activites-recherche-resultat {
     margin-bottom: 50px;
 }
 
-#activités-liste {
+#activites-liste {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
 }
 
-.activités-1 {
+.activites-1 {
     width: 22%;
     height: auto;
 }
 
 
-.activités-card {
+.activites-card {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 5px 5px 10px #DADADA;
@@ -401,7 +397,7 @@ span {
     transition: 0.3s;
 }
 
-.activités-card h3 {
+.activites-card h3 {
     height: 50px;
     width: 100%;
     font-size: 16px;
@@ -410,7 +406,7 @@ span {
     margin: 0;
 }
 
-.activités-card:hover {
+.activites-card:hover {
     color: #0065FC;
     box-shadow: 5px 5px 10px #C2C2C2;
 }
@@ -462,33 +458,35 @@ footer {
     /* Recherche TABLETTE */
     #recherche {
         width: 100%;
-        padding: 0% 5%;
+        padding: 0 5%;
     }
 
     /* Les plus populaires TABLETTE*/
     #hotel-recherche-resultat {
         width: 100%;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 
     #hotel-pluspopulaire {
         width: 100%;
-        display: flex;
         flex-direction: column;
-        border-radius: 0px;
+        border-radius: 0;
         padding: 2% 5%;
         margin-bottom: 5%;
+        display: flex;
     }
 
     #populairehotel-title {
-        margin: 2% 0%;
+        margin: 2% 0;
     }
 
     .populairehotel-card {
-        width: 100%;
-        max-height: 175px;
-        margin: 2% 0%;
+        display: inline-flex;
+        flex-direction: row;
+        width: 33%;
+        max-height: 150px;
+        margin: 2% 0;
     }
 
     .populairehotel-img {
@@ -497,63 +495,62 @@ footer {
     }
 
 
-    /* Résultat Hotel TABLETTE */
+    /* Resultat Hotel TABLETTE */
     #hotels-liste {
         width: 100%;
         background-color: #ffffff;
         border-radius: 0px;
-        padding: 0% 5%;
+        padding: 0 5%;
     }
 
     #hotels-liste h2,
     #hotels-liste h4 {
         width: 100%;
-        margin: 2% 0%;
+        margin: 2% 0;
     }
 
     #hotels-cardliste {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0%;
+        padding: 0;
     }
 
     .hotel-card {
-        margin: 2% 0%;
+        margin: 2% 0;
     }
 
-    /* Résultat activités TABLETTE*/
-    #activités-recherche-resultat {
+    /* Resultat activites TABLETTE*/
+    #activites-recherche-resultat {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 0% 5%;
+        padding: 0 5%;
         margin-bottom: 0;
     }
 
-    #activités-recherche-resultat h2 {
+    #activites-recherche-resultat h2 {
         margin-bottom: 4%;
     }
 
-    #activités-liste {
+    #activites-liste {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         height: auto;
-        flex-wrap: wrap;
-        align-content: space-between;
     }
 
-    .activités-1 {
-        width: 47%;
+    .activites-1 {
+        width: 23%;
+        height: auto;
         margin-bottom: 5%;
     }
 
-    .activités-2 {
-        width: 47%;
-        margin-bottom: 5%;
-    }
-
-    #activités-liste :nth-child(3) {
-        order: 4;
+    .full {
+        width: 100%;
+        height: 240px;
+        border-radius: 15px 15px 0px 0px;
     }
 
     /* Footer TABLETTE */
@@ -660,7 +657,7 @@ footer {
         margin: 5% 0%;
     }
 
-    /* Résultats Hotel SMARTPHONES */
+    /* Resultats Hotel SMARTPHONES */
     #hotels-liste {
         width: 100%;
         background-color: #ffffff;
@@ -685,25 +682,25 @@ footer {
         margin: 3% 0;
     }
 
-    /* Résultats activités SMARTPHONES */
-    #activités-recherche-resultat {
+    /* Resultats activites SMARTPHONES */
+    #activites-recherche-resultat {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0% 5%;
     }
 
-    #activités-liste {
+    #activites-liste {
         flex-direction: column;
     }
 
-    .activités-card {
+    .activites-card {
         width: auto;
         margin: 3% 0%;
     }
 
-    .activités-2,
-    .activités-1 {
+    .activites-2,
+    .activites-1 {
         width: 100%;
     }
 
